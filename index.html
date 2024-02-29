@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Denúncias Anônimas</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>DENÚNCIAS ANÔNIMAS</h1>
+    <p>A sua colaboração é importante para construir um ambiente seguro e ético.</p>
+    </header>
+
+    <main>
+        <h2>Faça sua denúncia de forma <strong>confidencial</strong></h2>
+        <section class="flex">
+            <div>
+                <img src="imagens/cadeado.png" alt="Segurança dos dados">
+                <p>A sua identidade será protegida.</p>
+            </div>
+            <div>
+                <img src="imagens/lupa.png" alt="Lupa de investigação">
+                <p>As denúncias serão investigadas com rigor.</p>
+            </div>
+            <div>
+                <img src="imagens/checkmark.png" alt="Checkbox de acompanhamento da denúncia">
+                <p>Acompanhe o status da sua denúncia.</p>
+            </div>
+        </section>
+        <h3>FORMULÁRIO DE DENÚNCIA</h3>
+        <section id="formulario">
+            <form action="#">
+                <div class="primeirasecao">
+                    <div class="tipodenuncia">
+                        <label for="tipo" class="labeltipo">Tipo da denúncia</label>
+                        <select name="tipo" id="tipo">
+                            <option value="">Selecione...</option>
+                            <option value="assedio">Assédio moral ou sexual</option>
+                            <option value="corrupcao">Corrupção</option>
+                            <option value="fraude">Fraude</option>
+                            <option value="seguranca">Segurança no trabalho</option>
+                            <option value="outro">Outro tipo</option>
+                        </select>
+                    </div>    
+                    <div class="datadenuncia">
+                        <label for="data">Data do fato:</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+                    <div class="localdenuncia">
+                        <label for="local">Local do fato:</label>
+                        <input type="text" id="local" name="local">
+                    </div>
+                </div>
+                <div class="segundasecao">
+                    <label for="descricao">Descreva o fato:</label>
+                    <textarea name="descricao" id="descricao" rows="6"></textarea>
+                </div>
+                <div class="terceirasecao">
+                    <label for="arquivo">Anexar arquivos (opcional):</label>
+                    <input type="file" id="arquivo" name="arquivo">
+                    <input type="submit" value="ENVIAR DENÚNCIA">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 - Sua Empresa</p>
+        </footer>
+    </main>
+
+</body>
+</html>
